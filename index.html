@@ -14,14 +14,28 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="nav">
+        <img id="logo" src="/images/logo.png" alt="logo" />
+        <ul>
+          <li><a id="home" onclick="goal(this)" class="goal" href="#">Home</a></li>
+          <li><a id="About" onclick="goal(this)" href="#about">About</a></li>
+          <li><a id="work" onclick="goal(this)" href="#work-process">Work Process</a></li>
+          <li><a id="test" onclick="goal(this)" href="#testimonials">Testimonials</a></li>
+          <li><a id="price" onclick="goal(this)" href="#pricing-tabels">Pricing Tables</a></li>
+          <li><a id="blog" onclick="goal(this)" href="#blog-entries">Blog Entries</a></li>
+          <li><a id="contact" onclick="goal(this)" href="#contact-us"> Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- ================ Phone-Nav ================ -->
+      <nav id="phone-nav">
         <div>
           <img src="/images/logo.png" alt="logo" />
           <i id="icon" onclick="showMenu()" class="fa fa-bars"></i>
-          <strong onclick="hideMenu()">X</strong>
+          <strong id="x" onclick="hideMenu()">X</strong>
         </div>
         <img id="logo" src="/images/logo.png" alt="logo" />
-        <ul id="menu" class="menu">
+        <ul id="menu">
           <li><a id="home" onclick="goal(this)" class="goal" href="#">Home</a></li>
           <li><a id="About" onclick="goal(this)" href="#about">About</a></li>
           <li><a id="work" onclick="goal(this)" href="#work-process">Work Process</a></li>
@@ -46,6 +60,7 @@
         </p>
         <a type="button">DISCOVER MORE</a>
       </article>
+
       <!-- ============= Main-Header ============= -->
       <section class="header-main">
         <div>
@@ -81,6 +96,7 @@
       </section>
     </header>
     <main>
+      
       <!-- ============= About ============= -->
       <section id="about">
         <div>
@@ -108,6 +124,7 @@
           <img src="/images/right-image.png" alt="" />
         </div>
       </section>
+
       <!-- ============= Work Process ============= -->
       <section id="work-process">
         <div class="container">
@@ -152,6 +169,8 @@
           </div>
         </div>
       </section>
+
+      <!-- ============= testimonials ============= -->
       <section id="testimonials">
         <div class="container">
           <article>
@@ -192,6 +211,8 @@
           </div>
         </div>
       </section>
+
+      <!-- ============= pricing-tabels ============= -->
       <section id="pricing-tabels">
         <div class="container">
           <article>
@@ -255,6 +276,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- ============= blog-entries ============= -->
       <section id="blog-entries">
         <div class="container">
           <article>
@@ -299,6 +322,8 @@
           </div>
         </div>
       </section>
+
+      <!-- ============= contact-us ============= -->
       <section id="contact-us">
         <div class="container">
           <article>
@@ -330,6 +355,8 @@
         </div>
       </section>
     </main>
+
+
     <footer>
       <div class="icons">
         <ul>
