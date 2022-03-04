@@ -1,7 +1,7 @@
-const nav = document.querySelector("header nav");
+const nav = document.getElementById("phone-nav");
 const menu = document.getElementById("menu");
-const x = document.querySelector("header nav div strong");
-const bar = document.querySelector("header nav div i");
+const x = document.getElementById("x");
+const bar = document.getElementById("icon");
 
 const home = document.getElementById("home");
 const About = document.getElementById("About");
@@ -11,7 +11,7 @@ const price = document.getElementById("price");
 const blog = document.getElementById("blog");
 const contact = document.getElementById("contact");
 
-function showMenu(e) {
+function showMenu() {
   menu.style.display = "block";
   nav.style.top = "40%";
   bar.style.display = "none";
