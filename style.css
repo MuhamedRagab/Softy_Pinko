@@ -40,6 +40,9 @@ header {
   align-content: center;
   flex-direction: column;
 }
+#phone-nav {
+  display: none;
+}
 
 header nav {
   padding: 12px 20px;
@@ -72,12 +75,10 @@ header nav div {
   display: none;
 }
 #menu {
-  display: flex;
+  display: none;
+  text-align: center;
 }
 header nav ul {
-  display: flex;
-}
-header nav .menu {
   display: flex;
 }
 header nav img {
@@ -536,10 +537,13 @@ footer .icons ul li a:hover {
 /* =========== End-Footer ===========  */
 
 @media (max-width: 1300px) {
-  header nav {
+  #nav {
+    display: none;
+  }
+  #phone-nav {
     display: block;
   }
-  header nav div {
+  #phone-nav div {
     display: flex;
   }
   header nav #logo,
@@ -548,12 +552,6 @@ footer .icons ul li a:hover {
   }
   #icon {
     display: block;
-  }
-  #menu {
-    margin-top: 30px;
-    text-align: center;
-    display: block;
-    display: none;
   }
 }
 
